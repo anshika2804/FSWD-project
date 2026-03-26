@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 function connect() {
-    // It's good practice to check if the URI actually exists
+    
     if (!process.env.MONGO_URI) {
         console.error("ERROR: MONGO_URI is not defined in your .env file!");
         return;
